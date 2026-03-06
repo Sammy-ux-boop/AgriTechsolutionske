@@ -36,11 +36,10 @@
 
 <section class="hero">
 
-<h2>Mapping Smarter Farming</h2>
+<h2>MAPPING SMART FARMING</h2>
 
-<p>
-We use GIS, satellite imagery, and spatial data to help farmers design productive farms,
-identify water resources, and optimize land use.
+<p id="hero-quote">
+Turn Your Farm Into a Profitable Agricultural System Using GIS Mapping
 </p>
 
 <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
@@ -61,15 +60,7 @@ Work With Us
 
 <p>
 
-AgriMap Solutions is a geospatial agriculture company helping farmers make
-data-driven decisions.
-
-Using GIS analysis, satellite imagery, and spatial data,
-we help farms improve productivity, identify water resources,
-and design efficient farm layouts.
-
-Our mission is to transform agriculture through smart mapping
-and precision farming technologies.
+AgriMap Solutions is a geospatial agriculture company dedicated to helping farmers make data-driven decisions that maximize productivity, efficiency, and sustainability. Leveraging GIS analysis, satellite imagery, and drone mapping, we provide comprehensive land use planning that evaluates soil quality, topography, water resources, and microclimates to optimize crop placement, irrigation, and overall farm management. By integrating spatial data with precision agriculture techniques, we enable farmers to increase yields, reduce operational costs, conserve water and soil, and minimize environmental impact. Our services also include monitoring crop health, identifying potential pest or disease outbreaks, and planning strategic interventions, ensuring each farm operates at peak efficiency. Through innovative mapping and technology-driven insights, our mission is to transform underutilized or dormant farmland into productive, profitable agricultural systems, turning every hectare into a strategic asset for the farmer and contributing to food security and sustainable farming practices in the region.
 
 </p>
 
@@ -217,13 +208,13 @@ Passionate about using geospatial technology to transform farming in Africa.
 
 <img src="images/agronomist.jpg">
 
-<h3>Jane Wanjiku</h3>
+<h3>Marion Kenduiywo</h3>
 
 <p><strong>Agronomist</strong></p>
 
 <p>
-Specialist in crop suitability analysis, soil fertility management,
-and farm productivity optimization.
+Expert in crop management, soil fertility improvement,
+and helping farmers maximize agricultural productivity.
 </p>
 
 </div>
@@ -254,28 +245,15 @@ and precision agriculture monitoring.
 
 <h2>What Farmers Say</h2>
 
-<div class="services">
+<div class="testimonial-box">
 
-<div class="card">
-<div class="card-content">
-<p>"AgriMap helped us map our farm and plan irrigation. Our crop yields improved."</p>
-<h4>- John Mwangi, Machakos</h4>
-</div>
-</div>
+<p id="testimonial-text">
+"AgriMap helped us map our farm and plan irrigation. Our crop yields improved."
+</p>
 
-<div class="card">
-<div class="card-content">
-<p>"The soil analysis helped us choose the right crops. Very professional work."</p>
-<h4>- Grace Njeri, Kiambu</h4>
-</div>
-</div>
-
-<div class="card">
-<div class="card-content">
-<p>"They helped us identify the best borehole location for our farm."</p>
-<h4>- David Ole, Kajiado</h4>
-</div>
-</div>
+<h4 id="testimonial-author">
+- John Mwangi, Machakos
+</h4>
 
 </div>
 
@@ -358,7 +336,77 @@ using data and GIS.
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
+
 <script>
+
+const quotes = [
+"Turn Your Farm Into a Profitable Agricultural System Using GIS Mapping",
+"Transform Idle Land Into High-Yield Farms With Data-Driven Planning",
+"Plan Your Farm With Data  Not Guesswork",
+"From Dormant Land to Thriving Farms Using Geospatial Intelligence",
+"Design Productive Farms With Soil, Water, and Terrain Analysis"
+];
+
+let quoteIndex = 0;
+
+function changeQuote(){
+
+quoteIndex++;
+
+if(quoteIndex >= quotes.length){
+quoteIndex = 0;
+}
+
+document.getElementById("hero-quote").innerText = quotes[quoteIndex];
+
+}
+
+setInterval(changeQuote,4000);
+
+
+
+const testimonials = [
+
+{
+text:"AgriMap helped us map our farm and plan irrigation. Our crop yields improved.",
+author:"- John Mwangi, Machakos"
+},
+
+{
+text:"The soil analysis helped us choose the right crops. Very professional work.",
+author:"- Grace Njeri, Kiambu"
+},
+
+{
+text:"They helped us identify the best borehole location for our farm.",
+author:"- David Ole, Kajiado"
+},
+
+{
+text:"AgriMap helped us plan our potato farm and understand our soil better. Our harvest improved significantly.",
+author:"- Marion Chepng'eno,  Molo"
+}
+
+];
+
+let testimonialIndex = 0;
+
+function changeTestimonial(){
+
+testimonialIndex++;
+
+if(testimonialIndex >= testimonials.length){
+testimonialIndex = 0;
+}
+
+document.getElementById("testimonial-text").innerText = testimonials[testimonialIndex].text;
+document.getElementById("testimonial-author").innerText = testimonials[testimonialIndex].author;
+
+}
+
+setInterval(changeTestimonial,5000);
+
+
 
 var map = L.map('map').setView([-1.286389,36.817223], 11);
 
