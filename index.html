@@ -6,420 +6,2324 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AgriMap Solutions</title>
+<title>AgriMap Smart Solutions | Agricultural Intelligence & Agritech</title>
+
+<meta name="description"
+content="AgriMap Smart Solutions uses geospatial intelligence, agricultural data and technology to help farmers, landowners and agribusinesses make smarter decisions about land, crops, water and markets.">
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link
+href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+rel="stylesheet">
+
+<!-- Leaflet -->
+<link
+rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
 
 </head>
 
+
 <body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
 <header>
 
-<h1>AgriMap Solutions</h1>
+    <div class="logo-container">
 
-<nav>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#projects">Projects</a>
-<a href="#team">Team</a>
-<a href="#consult">Consultation</a>
-<a href="#contact">Contact</a>
-</nav>
+        <img
+        src="images/logo.png"
+        alt="AgriMap Smart Solutions Logo"
+        class="logo">
+
+        <h1>AgriMap Smart Solutions</h1>
+
+    </div>
+
+
+    <nav>
+
+        <a href="#about">About</a>
+
+        <a href="#services">Services</a>
+
+        <a href="#projects">Projects</a>
+
+        <a href="#how-it-works">How It Works</a>
+
+        <a href="#team">Team</a>
+
+        <a href="#consultation">Consultation</a>
+
+        <a href="#careers">Careers</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
 
 </header>
 
 
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
 <section class="hero">
 
-<h2>MAPPING SMART FARMING</h2>
-
-<p id="hero-quote">
-Turn Your Farm Into a Profitable Agricultural System Using GIS Mapping
-</p>
-
-<button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
-Work With Us
-</button>
-
-</section>
+    <div class="hero-badge">
+        AGRICULTURE • DATA • GEOSPATIAL INTELLIGENCE
+    </div>
 
 
-
-<section id="about" class="section">
-
-<h2>About AgriMap Solutions</h2>
-
-<div class="about-grid">
-
-<img src="images/drone.jpg" alt="Drone agriculture">
-
-<p>
-
-AgriMap Solutions is a geospatial agriculture company dedicated to helping farmers make data-driven decisions that maximize productivity, efficiency, and sustainability. Leveraging GIS analysis, satellite imagery, and drone mapping, we provide comprehensive land use planning that evaluates soil quality, topography, water resources, and microclimates to optimize crop placement, irrigation, and overall farm management. By integrating spatial data with precision agriculture techniques, we enable farmers to increase yields, reduce operational costs, conserve water and soil, and minimize environmental impact. Our services also include monitoring crop health, identifying potential pest or disease outbreaks, and planning strategic interventions, ensuring each farm operates at peak efficiency. Through innovative mapping and technology-driven insights, our mission is to transform underutilized or dormant farmland into productive, profitable agricultural systems, turning every hectare into a strategic asset for the farmer and contributing to food security and sustainable farming practices in the region.
-
-</p>
-
-</div>
-
-</section>
+    <h2 id="hero-title">
+        SMART AGRICULTURE.<br>
+        BETTER DECISIONS.
+    </h2>
 
 
+    <p id="hero-text">
+        We use geospatial and agricultural data to help farmers,
+        landowners, investors and agribusinesses make smarter
+        decisions about land, crops, water and markets.
+    </p>
 
-<section id="services" class="section">
 
-<h2>Our Services</h2>
+    <div class="hero-buttons">
 
-<div class="services">
+        <a href="#services" class="hero-primary">
+            Explore Our Services
+        </a>
 
-<div class="card">
-<img src="images/farm-mapping.jpg">
-<div class="card-content">
-<h3>Farm Mapping</h3>
-<p>Boundary mapping, land use planning, and spatial farm zoning using GIS technology.</p>
-</div>
-</div>
+        <a href="#consultation" class="hero-secondary">
+            Start a Consultation
+        </a>
 
-<div class="card">
-<img src="images/soil.jpg">
-<div class="card-content">
-<h3>Soil Suitability Analysis</h3>
-<p>Identify the most suitable crops based on soil properties, slope, and terrain analysis.</p>
-</div>
-</div>
+    </div>
 
-<div class="card">
-<img src="images/borehole.jpg">
-<div class="card-content">
-<h3>Borehole Site Identification</h3>
-<p>Use GIS and hydrogeological data to locate optimal groundwater drilling points.</p>
-</div>
-</div>
 
-<div class="card">
-<img src="images/satellite.jpg">
-<div class="card-content">
-<h3>Satellite Farm Monitoring</h3>
-<p>Monitor crop health and drought stress using satellite imagery.</p>
-</div>
-</div>
+    <div class="hero-trust">
 
-<div class="card">
-<img src="images/fertilizer.jpg">
-<div class="card-content">
-<h3>Precision Fertilization</h3>
-<p>Optimize fertilizer application using spatial data.</p>
-</div>
-</div>
+        <span>🌱 Agriculture</span>
 
-<div class="card">
-<img src="images/irrigation.jpg">
-<div class="card-content">
-<h3>Irrigation Planning</h3>
-<p>Design efficient irrigation systems using terrain and water source analysis.</p>
-</div>
-</div>
+        <span>📍 Geospatial Intelligence</span>
 
-<div class="card">
-<img src="images/drone-monitoring.jpg">
-<div class="card-content">
-<h3>Crop Health Monitoring</h3>
-<p>Identify crop stress and pest outbreaks using drones.</p>
-</div>
-</div>
+        <span>💧 Water</span>
 
-<div class="card">
-<img src="images/landuse.jpg">
-<div class="card-content">
-<h3>Land Use Planning</h3>
-<p>Plan farm layout for maximum productivity and sustainability.</p>
-</div>
-</div>
+        <span>📊 Data</span>
 
-</div>
+    </div>
 
 </section>
 
 
 
-<section id="projects" class="section">
+<!-- =====================================================
+     QUICK INTRO
+===================================================== -->
 
-<h2>Projects We've Worked On</h2>
+<section class="intro-section">
 
-<div class="services">
+    <div class="intro-content">
 
-<div class="card">
-<img src="images/project1.jpg">
-<div class="card-content">
-<h3>Kitui Farm Mapping</h3>
-<p>Mapped 250 acres of farmland to help farmers plan irrigation and crop zoning.</p>
-</div>
-</div>
+        <span class="section-label">
+            AGRICULTURAL INTELLIGENCE
+        </span>
 
-<div class="card">
-<img src="images/project2.jpg">
-<div class="card-content">
-<h3>Machakos Soil Analysis</h3>
-<p>GIS analysis used to determine crop suitability and fertilizer planning.</p>
-</div>
-</div>
+        <h2>
+            Turning Agricultural Data Into
+            <span>Better Decisions</span>
+        </h2>
 
-<div class="card">
-<img src="images/project3.jpg">
-<div class="card-content">
-<h3>Kajiado Water Mapping</h3>
-<p>Hydrological GIS analysis used to identify borehole drilling locations.</p>
-</div>
-</div>
+        <p>
+            Agriculture is more than planting crops. It is about
+            choosing the right land, understanding water availability,
+            selecting suitable crops, planning farm operations and
+            reaching the right markets.
+        </p>
 
-</div>
+        <p>
+            AgriMap Smart Solutions brings these decisions together
+            using geospatial technology, remote sensing, agricultural
+            data and spatial analysis.
+        </p>
 
-</section>
-
-
-
-<section id="team" class="section">
-
-<h2>Our Team</h2>
-
-<div class="team">
-
-<div class="team-card">
-
-<img src="images/caleb.png">
-
-<h3>Caleb Kikongo Sammy</h3>
-
-<p><strong>Founder & GIS Specialist</strong></p>
-
-<p>
-Expert in GIS mapping, spatial analysis, and agricultural land planning.
-Passionate about using geospatial technology to transform farming in Africa.
-</p>
-
-</div>
-
-
-<div class="team-card">
-
-<img src="images/agronomist.jpg">
-
-<h3>Marion Kenduiywo</h3>
-
-<p><strong>Agronomist</strong></p>
-
-<p>
-Expert in crop management, soil fertility improvement,
-and helping farmers maximize agricultural productivity.
-</p>
-
-</div>
-
-
-<div class="team-card">
-
-<img src="images/drone-specialist.jpg">
-
-<h3>David Otieno</h3>
-
-<p><strong>Drone & Survey Specialist</strong></p>
-
-<p>
-Handles drone mapping, aerial imagery collection,
-and precision agriculture monitoring.
-</p>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
 
-<section class="section">
+<!-- =====================================================
+     INTELLIGENCE NUMBERS
+===================================================== -->
 
-<h2>What Farmers Say</h2>
+<section class="intelligence-section">
 
-<div class="testimonial-box">
+    <div class="section">
 
-<p id="testimonial-text">
-"AgriMap helped us map our farm and plan irrigation. Our crop yields improved."
-</p>
+        <div class="section-heading">
 
-<h4 id="testimonial-author">
-- John Mwangi, Machakos
-</h4>
+            <span class="section-label">
+                OUR FOCUS
+            </span>
 
-</div>
+            <h2>
+                Agricultural Intelligence
+            </h2>
+
+            <p>
+                We connect the key factors that determine agricultural
+                opportunity and productivity.
+            </p>
+
+        </div>
+
+
+        <div class="intelligence-grid">
+
+
+            <div class="intelligence-card">
+
+                <div class="intelligence-icon">
+                    🌍
+                </div>
+
+                <h3>Land</h3>
+
+                <p>
+                    Understand land potential, suitability,
+                    accessibility and agricultural opportunities.
+                </p>
+
+            </div>
+
+
+            <div class="intelligence-card">
+
+                <div class="intelligence-icon">
+                    💧
+                </div>
+
+                <h3>Water</h3>
+
+                <p>
+                    Assess water resources, irrigation potential,
+                    catchments and agricultural water opportunities.
+                </p>
+
+            </div>
+
+
+            <div class="intelligence-card">
+
+                <div class="intelligence-icon">
+                    🌱
+                </div>
+
+                <h3>Crops</h3>
+
+                <p>
+                    Match crops with soil, terrain, climate and
+                    environmental conditions.
+                </p>
+
+            </div>
+
+
+            <div class="intelligence-card">
+
+                <div class="intelligence-icon">
+                    🚚
+                </div>
+
+                <h3>Markets</h3>
+
+                <p>
+                    Understand farm accessibility, routes,
+                    logistics and connections to markets.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
 
 </section>
 
 
 
-<section id="consult" class="section">
+<!-- =====================================================
+     ABOUT
+===================================================== -->
 
-<h2>Book a Farm Consultation</h2>
+<section class="section" id="about">
 
-<div class="contact">
+    <div class="section-heading">
 
-<form>
+        <span class="section-label">
+            ABOUT AGRIMAP
+        </span>
 
-<input type="text" placeholder="Your Name" required>
+        <h2>
+            Where Agriculture Meets
+            Geospatial Intelligence
+        </h2>
 
-<input type="email" placeholder="Email Address" required>
+    </div>
 
-<input type="text" placeholder="Farm Location">
 
-<select>
-<option>Select Service</option>
-<option>Farm Mapping</option>
-<option>Soil Suitability Analysis</option>
-<option>Borehole Site Identification</option>
-<option>Irrigation Planning</option>
-</select>
+    <div class="about-grid">
 
-<textarea placeholder="Describe your farm project"></textarea>
+        <div>
 
-<button type="submit">Send Request</button>
+            <img
+            src="images/drone.jpg"
+            alt="Drone agricultural mapping">
 
-</form>
+        </div>
 
-</div>
+
+        <div>
+
+            <p>
+                <strong>AgriMap Smart Solutions</strong> is an
+                agritech and geospatial intelligence company focused
+                on helping people make better agricultural decisions.
+            </p>
+
+            <p>
+                We combine GIS, satellite imagery, remote sensing,
+                spatial analysis, agricultural data and technology
+                to understand the relationship between land, water,
+                crops, infrastructure and markets.
+            </p>
+
+            <p>
+                From selecting agricultural land to planning farms,
+                monitoring crops and analyzing routes to market,
+                our goal is simple:
+                <strong>turn data into practical agricultural decisions.</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WHAT WE DO
+===================================================== -->
+
+<section class="section services-section" id="services">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            WHAT WE DO
+        </span>
+
+        <h2>
+            Four Areas of Agricultural Intelligence
+        </h2>
+
+        <p>
+            Explore our services across land, farms, water and
+            agricultural logistics.
+        </p>
+
+    </div>
+
+
+    <!-- SERVICE CATEGORY NAVIGATION -->
+
+    <div class="service-slider">
+
+        <div class="service-tabs">
+
+            <button
+                class="service-tab active"
+                data-category="land">
+                <span>01</span>
+                Land Intelligence
+            </button>
+
+            <button
+                class="service-tab"
+                data-category="farm">
+                <span>02</span>
+                Farm Intelligence
+            </button>
+
+            <button
+                class="service-tab"
+                data-category="water">
+                <span>03</span>
+                Water Intelligence
+            </button>
+
+            <button
+                class="service-tab"
+                data-category="logistics">
+                <span>04</span>
+                Agricultural Logistics
+            </button>
+
+        </div>
+
+
+        <!-- CATEGORY SLIDER -->
+
+        <div class="service-track">
+
+
+            <!-- =================================================
+                 LAND INTELLIGENCE
+            ================================================== -->
+
+            <div class="service-category-slide active" data-slide="land">
+
+                <div class="category-header">
+
+                    <div>
+
+                        <span class="category-number">
+                            01 / 04
+                        </span>
+
+                        <h3>
+                            Agricultural Land Intelligence
+                        </h3>
+
+                        <p>
+                            Understand agricultural land before
+                            investing, leasing, developing or planting.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="services">
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/land-leasing.jpg"
+                        alt="Agricultural land leasing">
+
+                        <div class="card-content">
+
+                            <h3>
+                                Land Leasing & Farm Matching
+                            </h3>
+
+                            <p>
+                                Connect landowners with farmers and
+                                agricultural investors looking for
+                                suitable land based on location,
+                                acreage, accessibility and intended use.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/crop-suitability.jpg"
+                        alt="Land suitability analysis">
+
+                        <div class="card-content">
+
+                            <h3>
+                                Land Suitability Analysis
+                            </h3>
+
+                            <p>
+                                Assess terrain, soil, water,
+                                accessibility and environmental
+                                conditions to understand land potential.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/landuse.jpg"
+                        alt="Farm land use planning">
+
+                        <div class="card-content">
+
+                            <h3>
+                                Land Use & Farm Planning
+                            </h3>
+
+                            <p>
+                                Develop practical spatial plans for
+                                crops, access roads, irrigation and
+                                farm infrastructure.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/soil.jpg"
+                        alt="Crop suitability analysis">
+
+                        <div class="card-content">
+
+                            <h3>
+                                Crop Suitability Analysis
+                            </h3>
+
+                            <p>
+                                Identify crops that are better suited
+                                to particular environmental and
+                                agricultural conditions.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/idle-land.jpg"
+                        alt="Underutilized agricultural land">
+
+                        <div class="card-content">
+
+                            <h3>
+                                Idle & Underutilized Land
+                            </h3>
+
+                            <p>
+                                Use spatial and satellite information
+                                to identify potentially underutilized
+                                agricultural areas.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/project4.jpg"
+                        alt="Agricultural investment assessment">
+
+                        <div class="card-content">
+
+                            <h3>
+                                Agricultural Investment Assessment
+                            </h3>
+
+                            <p>
+                                Combine land, soil, water, accessibility,
+                                markets and environmental information
+                                to support investment decisions.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FARM INTELLIGENCE
+            ================================================== -->
+
+            <div class="service-category-slide" data-slide="farm">
+
+                <div class="category-header">
+
+                    <div>
+
+                        <span class="category-number">
+                            02 / 04
+                        </span>
+
+                        <h3>
+                            Farm Intelligence
+                        </h3>
+
+                        <p>
+                            Turn farm data, satellite imagery and
+                            field information into practical
+                            management insights.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="services">
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/farm-mapping.jpg"
+                        alt="Farm mapping">
+
+                        <div class="card-content">
+
+                            <h3>Farm Mapping</h3>
+
+                            <p>
+                                Map farm boundaries, fields,
+                                infrastructure, water points,
+                                roads and other agricultural features.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/satellite.jpg"
+                        alt="Satellite farm monitoring">
+
+                        <div class="card-content">
+
+                            <h3>Satellite Farm Monitoring</h3>
+
+                            <p>
+                                Monitor vegetation, crop development,
+                                land-cover changes and potential crop
+                                stress using satellite imagery.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/drone-monitoring.jpg"
+                        alt="Drone crop monitoring">
+
+                        <div class="card-content">
+
+                            <h3>Drone Crop Assessment</h3>
+
+                            <p>
+                                Obtain detailed field-level information
+                                for crop assessment and targeted
+                                agricultural inspection.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/precision.jpg"
+                        alt="Precision agriculture">
+
+                        <div class="card-content">
+
+                            <h3>Precision Agriculture</h3>
+
+                            <p>
+                                Identify spatial variability and
+                                develop management zones for targeted
+                                agricultural interventions.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/fertilizer.jpg"
+                        alt="Precision fertilization">
+
+                        <div class="card-content">
+
+                            <h3>Precision Fertilization</h3>
+
+                            <p>
+                                Support targeted fertilizer planning
+                                using soil, crop and spatial
+                                variability information.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/data-platform.jpg"
+                        alt="Agricultural data platform">
+
+                        <div class="card-content">
+
+                            <h3>Agricultural Data Platforms</h3>
+
+                            <p>
+                                Bring together farm, soil, water,
+                                crop, satellite, road and market
+                                information into useful systems.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 WATER INTELLIGENCE
+            ================================================== -->
+
+            <div class="service-category-slide" data-slide="water">
+
+                <div class="category-header">
+
+                    <div>
+
+                        <span class="category-number">
+                            03 / 04
+                        </span>
+
+                        <h3>
+                            Water Intelligence
+                        </h3>
+
+                        <p>
+                            Understand water resources and their
+                            potential role in agricultural development.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="services">
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/borehole.jpg"
+                        alt="Borehole site assessment">
+
+                        <div class="card-content">
+
+                            <h3>
+                                Borehole Site Assessment
+                            </h3>
+
+                            <p>
+                                Analyze spatial, terrain, geological
+                                and environmental information to
+                                identify areas for further investigation.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/water-source.jpg"
+                        alt="Water source mapping">
+
+                        <div class="card-content">
+
+                            <h3>Water Source Mapping</h3>
+
+                            <p>
+                                Map rivers, streams, reservoirs,
+                                dams and other water resources
+                                relevant to agriculture.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/irrigation.jpg"
+                        alt="Irrigation planning">
+
+                        <div class="card-content">
+
+                            <h3>Irrigation Planning</h3>
+
+                            <p>
+                                Analyze terrain, elevation, water
+                                sources and farm boundaries to
+                                support irrigation planning.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/reservoir.jpg"
+                        alt="Reservoir and dam suitability">
+
+                        <div class="card-content">
+
+                            <h3>Reservoir & Dam Suitability</h3>
+
+                            <p>
+                                Assess terrain, drainage, catchments
+                                and spatial factors for potential
+                                water storage locations.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/watershed.jpg"
+                        alt="Watershed analysis">
+
+                        <div class="card-content">
+
+                            <h3>Watershed & Catchment Analysis</h3>
+
+                            <p>
+                                Understand drainage networks,
+                                catchments, terrain and water-flow
+                                patterns.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/flood.jpg"
+                        alt="Flood risk mapping">
+
+                        <div class="card-content">
+
+                            <h3>Flood Risk Mapping</h3>
+
+                            <p>
+                                Identify areas potentially exposed
+                                to flooding and other water-related
+                                hazards.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 AGRICULTURAL LOGISTICS
+            ================================================== -->
+
+            <div class="service-category-slide" data-slide="logistics">
+
+                <div class="category-header">
+
+                    <div>
+
+                        <span class="category-number">
+                            04 / 04
+                        </span>
+
+                        <h3>
+                            Agricultural Logistics
+                        </h3>
+
+                        <p>
+                            Connect farms with roads, collection
+                            points, aggregation centers and markets.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="services">
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/routing.jpg"
+                        alt="Farm to market route analysis">
+
+                        <div class="card-content">
+
+                            <h3>
+                                Farm-to-Market Route Analysis
+                            </h3>
+
+                            <p>
+                                Identify practical routes between
+                                farms, collection points and markets.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/logistics.jpg"
+                        alt="Least cost routing">
+
+                        <div class="card-content">
+
+                            <h3>
+                                Least-Cost Routing
+                            </h3>
+
+                            <p>
+                                Analyze terrain, road networks and
+                                movement constraints to identify
+                                efficient routes.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/collection.jpg"
+                        alt="Collection point planning">
+
+                        <div class="card-content">
+
+                            <h3>
+                                Collection Point Planning
+                            </h3>
+
+                            <p>
+                                Identify strategic locations for
+                                agricultural produce collection.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/aggregation.jpg"
+                        alt="Aggregation center planning">
+
+                        <div class="card-content">
+
+                            <h3>
+                                Aggregation Center Analysis
+                            </h3>
+
+                            <p>
+                                Analyze suitable locations for
+                                agricultural aggregation and
+                                distribution facilities.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/accessibility.jpg"
+                        alt="Farm accessibility analysis">
+
+                        <div class="card-content">
+
+                            <h3>
+                                Farm Accessibility Analysis
+                            </h3>
+
+                            <p>
+                                Understand how easily farms connect
+                                to roads, markets and agricultural
+                                infrastructure.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <img
+                        src="images/access-road.jpg"
+                        alt="Farm access planning">
+
+                        <div class="card-content">
+
+                            <h3>
+                                Farm Access Planning
+                            </h3>
+
+                            <p>
+                                Plan practical access routes to
+                                improve movement within and around
+                                agricultural land.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- CATEGORY CONTROLS -->
+
+        <div class="service-controls">
+
+            <button
+                class="service-arrow"
+                id="service-prev"
+                aria-label="Previous service category">
+                ←
+            </button>
+
+            <div class="service-progress">
+
+                <span class="progress-active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <button
+                class="service-arrow"
+                id="service-next"
+                aria-label="Next service category">
+                →
+            </button>
+
+        </div>
+
+
+    </div>
 
 </section>
 
 
 
-<section id="contact" class="section">
+<!-- =====================================================
+     HOW IT WORKS
+===================================================== -->
 
-<div class="contact">
+<section class="section" id="how-it-works">
 
-<h2>Contact Us</h2>
+    <div class="section-heading">
 
-<p>Email: calebsammy224@gmail.com</p>
+        <span class="section-label">
+            OUR APPROACH
+        </span>
 
-<p>Location: Nairobi, Kenya</p>
+        <h2>
+            How It Works
+        </h2>
 
-<p>
-We help farmers transform land into productive agricultural systems
-using data and GIS.
-</p>
+        <p>
+            We turn agricultural questions into practical,
+            data-driven decisions.
+        </p>
 
-</div>
+    </div>
+
+
+    <div class="process-grid">
+
+
+        <div class="process-card reveal">
+
+            <div class="process-number">
+                01
+            </div>
+
+            <div class="process-icon">
+                🔍
+            </div>
+
+            <h3>
+                Assess
+            </h3>
+
+            <p>
+                Understand your land, farm, water resource,
+                agricultural challenge or investment objective.
+            </p>
+
+        </div>
+
+
+
+        <div class="process-card reveal">
+
+            <div class="process-number">
+                02
+            </div>
+
+            <div class="process-icon">
+                📊
+            </div>
+
+            <h3>
+                Analyze
+            </h3>
+
+            <p>
+                Combine geospatial, agricultural, environmental
+                and spatial data to understand the situation.
+            </p>
+
+        </div>
+
+
+
+        <div class="process-card reveal">
+
+            <div class="process-number">
+                03
+            </div>
+
+            <div class="process-icon">
+                🗺️
+            </div>
+
+            <h3>
+                Plan
+            </h3>
+
+            <p>
+                Translate the analysis into maps, recommendations,
+                farm plans, routes or decision-support information.
+            </p>
+
+        </div>
+
+
+
+        <div class="process-card reveal">
+
+            <div class="process-number">
+                04
+            </div>
+
+            <div class="process-icon">
+                🌱
+            </div>
+
+            <h3>
+                Implement
+            </h3>
+
+            <p>
+                Use the resulting information to support practical
+                agricultural action and better resource allocation.
+            </p>
+
+        </div>
+
+
+    </div>
 
 </section>
 
 
 
-<section class="section">
+<!-- =====================================================
+     FEATURED PROJECTS
+===================================================== -->
 
-<h2>Our Location</h2>
+<section class="section projects-section" id="projects">
 
-<div id="map"></div>
+    <div class="section-heading">
+
+        <span class="section-label">
+            SELECTED WORK
+        </span>
+
+        <h2>
+            Featured Projects
+        </h2>
+
+        <p>
+            Applying geospatial intelligence to real agricultural
+            and environmental challenges.
+        </p>
+
+    </div>
+
+
+    <div class="projects-grid">
+
+
+        <!-- KITUI -->
+
+        <article class="project-card reveal">
+
+            <div class="project-image">
+
+                <img
+                src="images/project1.jpg"
+                alt="Kitui agricultural water project">
+
+                <span class="project-tag">
+                    WATER INTELLIGENCE
+                </span>
+
+            </div>
+
+            <div class="project-content">
+
+                <span class="project-location">
+                    KITUI COUNTY
+                </span>
+
+                <h3>
+                    Agricultural Water & Reservoir Suitability
+                </h3>
+
+                <p>
+                    Spatial analysis combining terrain, drainage,
+                    land use and environmental factors to identify
+                    potential areas for agricultural water storage.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- LAND USE -->
+
+        <article class="project-card reveal">
+
+            <div class="project-image">
+
+                <img
+                src="images/project2.jpg"
+                alt="Agricultural land use planning">
+
+                <span class="project-tag">
+                    LAND INTELLIGENCE
+                </span>
+
+            </div>
+
+            <div class="project-content">
+
+                <span class="project-location">
+                    AGRICULTURAL PLANNING
+                </span>
+
+                <h3>
+                    Farm Land-Use Planning
+                </h3>
+
+                <p>
+                    Designing practical farm layouts that integrate
+                    crop areas, access roads, water infrastructure
+                    and productive land allocation.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- WATER -->
+
+        <article class="project-card reveal">
+
+            <div class="project-image">
+
+                <img
+                src="images/project3.jpg"
+                alt="Water resource mapping">
+
+                <span class="project-tag">
+                    WATER INTELLIGENCE
+                </span>
+
+            </div>
+
+            <div class="project-content">
+
+                <span class="project-location">
+                    KENYA
+                </span>
+
+                <h3>
+                    Water Resource Analysis
+                </h3>
+
+                <p>
+                    Mapping and analyzing water resources to support
+                    agricultural development and resource planning.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ROUTING -->
+
+        <article class="project-card reveal">
+
+            <div class="project-image">
+
+                <img
+                src="images/project4.jpg"
+                alt="Farm to market routing">
+
+                <span class="project-tag">
+                    AGRICULTURAL LOGISTICS
+                </span>
+
+            </div>
+
+            <div class="project-content">
+
+                <span class="project-location">
+                    FARM LOGISTICS
+                </span>
+
+                <h3>
+                    Farm-to-Market Route Optimization
+                </h3>
+
+                <p>
+                    Least-cost route analysis designed to improve
+                    movement from farms to collection points and
+                    agricultural markets.
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
 
 </section>
 
 
+
+<!-- =====================================================
+     TEAM
+===================================================== -->
+
+<section class="section" id="team">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            OUR PEOPLE
+        </span>
+
+        <h2>
+            The Team
+        </h2>
+
+    </div>
+
+
+    <div class="team">
+
+
+        <div class="team-card">
+
+            <img
+            src="images/caleb.jpg"
+            alt="Caleb Kikongo Sammy">
+
+            <h3>
+                Caleb Kikongo Sammy
+            </h3>
+
+            <p>
+                Founder & Geospatial Data Engineer
+            </p>
+
+        </div>
+
+
+        <div class="team-card">
+
+            <img
+            src="images/marion.jpg"
+            alt="Marion Wanaina">
+
+            <h3>
+                Marion Wanaina
+            </h3>
+
+            <p>
+                Agronomist
+            </p>
+
+        </div>
+
+
+        <div class="team-card">
+
+            <img
+            src="images/david.jpg"
+            alt="David Otieno">
+
+            <h3>
+                David Otieno
+            </h3>
+
+            <p>
+                Drone & Survey Specialist
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     CAREERS
+===================================================== -->
+
+<section class="careers-section" id="careers">
+
+    <div class="careers-container">
+
+        <!-- CAREERS INTRO -->
+
+        <div class="careers-intro">
+
+            <span class="section-label light">
+                CAREERS
+            </span>
+
+            <h2>
+                Build the Future of
+                <span>Agriculture With Us.</span>
+            </h2>
+
+            <p>
+                At AgriMap Smart Solutions, we combine agriculture,
+                geospatial intelligence, data and technology to
+                solve real agricultural challenges.
+            </p>
+
+            <p>
+                We are building a team of people who are passionate
+                about innovation, agriculture, technology and
+                creating practical solutions for farmers and
+                agribusinesses.
+            </p>
+
+        </div>
+
+
+        <!-- CURRENT JOB STATUS -->
+
+        <div class="career-openings">
+
+            <div class="no-jobs">
+
+                <div class="no-jobs-icon">
+                    
+                </div>
+
+                <span class="career-type">
+                    CURRENTLY CLOSED
+                </span>
+
+                <h3>
+                    No Available Jobs
+                </h3>
+
+                <p>
+                    We currently don't have any open positions.
+                    Please check back later for new opportunities.
+                </p>
+
+                <p>
+                    If you believe your skills could contribute
+                    to AgriMap Smart Solutions, you can still
+                    introduce yourself through a general application.
+                </p>
+
+                <button
+                    type="button"
+                    class="general-apply-button"
+                    onclick="openApplication('General Application')">
+
+                    Send a General Application →
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     CONSULTATION CTA
+===================================================== -->
+
+<section class="consultation-banner">
+
+    <div>
+
+        <span class="section-label light">
+            LET'S WORK TOGETHER
+        </span>
+
+        <h2>
+            Have land?
+            <br>
+            Have a farm project?
+            <br>
+            Let's analyze it.
+        </h2>
+
+        <p>
+            Tell us what you are planning and let agricultural
+            data help guide the next decision.
+        </p>
+
+        <a
+        href="#consultation"
+        class="cta-button">
+            Start a Consultation
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONSULTATION FORM
+===================================================== -->
+
+<section class="section consultation-section" id="consultation">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            GET STARTED
+        </span>
+
+        <h2>
+            Start a Consultation
+        </h2>
+
+        <p>
+            Tell us about your land, farm, water or agricultural
+            project.
+        </p>
+
+    </div>
+
+
+    <form>
+
+        <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required>
+
+
+        <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required>
+
+
+        <input
+        type="text"
+        name="location"
+        placeholder="Farm / Land Location">
+
+
+        <select name="service">
+
+            <option value="">
+                Select a service
+            </option>
+
+
+            <optgroup label="Agricultural Land Intelligence">
+
+                <option>
+                    Land Leasing & Farm Matching
+                </option>
+
+                <option>
+                    Land Suitability Analysis
+                </option>
+
+                <option>
+                    Land Use & Farm Planning
+                </option>
+
+                <option>
+                    Crop Suitability Analysis
+                </option>
+
+                <option>
+                    Agricultural Investment Assessment
+                </option>
+
+                <option>
+                    Idle & Underutilized Land Identification
+                </option>
+
+            </optgroup>
+
+
+            <optgroup label="Farm Intelligence">
+
+                <option>Farm Mapping</option>
+
+                <option>Satellite Farm Monitoring</option>
+
+                <option>Drone Crop Assessment</option>
+
+                <option>Precision Agriculture</option>
+
+                <option>Precision Fertilization</option>
+
+                <option>Agricultural Data Platform</option>
+
+            </optgroup>
+
+
+            <optgroup label="Water Intelligence">
+
+                <option>Borehole Site Assessment</option>
+
+                <option>Water Source Mapping</option>
+
+                <option>Irrigation Planning</option>
+
+                <option>Reservoir & Dam Suitability</option>
+
+                <option>Watershed & Catchment Analysis</option>
+
+                <option>Flood Risk Mapping</option>
+
+            </optgroup>
+
+
+            <optgroup label="Agricultural Logistics">
+
+                <option>Farm-to-Market Route Analysis</option>
+
+                <option>Least-Cost Routing</option>
+
+                <option>Collection Point Planning</option>
+
+                <option>Aggregation Center Analysis</option>
+
+                <option>Farm Accessibility Analysis</option>
+
+                <option>Farm Access Planning</option>
+
+            </optgroup>
+
+        </select>
+
+
+        <textarea
+        name="message"
+        placeholder="Tell us about your project..."></textarea>
+
+
+        <button type="submit">
+            Send Consultation Request
+        </button>
+
+    </form>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-grid">
+
+
+        <div>
+
+            <span class="section-label light">
+                CONTACT AGRIMAP
+            </span>
+
+            <h2>
+                Let's Build Smarter
+                Agriculture Together.
+            </h2>
+
+            <p>
+                Whether you are a farmer, landowner, investor,
+                cooperative or agribusiness, we can help you
+                understand the spatial side of your agricultural
+                decisions.
+            </p>
+
+        </div>
+
+
+        <div class="contact-details">
+
+            <div class="contact-item">
+
+                <span>📧</span>
+
+                <div>
+
+                    <strong>Email</strong>
+
+                    <p>
+                        calebsammy224@gmail.com
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <span>📍</span>
+
+                <div>
+
+                    <strong>Location</strong>
+
+                    <p>
+                        Kenya
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <span>🌱</span>
+
+                <div>
+
+                    <strong>Focus</strong>
+
+                    <p>
+                        Agriculture • Data • Geospatial Intelligence
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MAP
+===================================================== -->
+
+<section class="section map-section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            WHERE WE OPERATE
+        </span>
+
+        <h2>
+            Kenya
+        </h2>
+
+    </div>
+
+    <div id="map"></div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
 <footer>
 
-<p>© 2026 AgriMap Solutions | Mapping Smarter Farming</p>
+    <div class="footer-container">
+
+
+        <div class="footer-brand">
+
+            <img
+            src="images/logo.png"
+            alt="AgriMap Smart Solutions">
+
+            <h3>
+                AgriMap Smart Solutions
+            </h3>
+
+            <p>
+                Creating a world where agriculture is efficient,
+                sustainable, and profitable.
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-links">
+
+            <h4>
+                Explore
+            </h4>
+
+            <a href="#about">About</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#how-it-works">How It Works</a>
+
+        </div>
+
+
+
+        <div class="footer-links">
+
+            <h4>
+                Services
+            </h4>
+
+            <a href="#services">
+                Land Intelligence
+            </a>
+
+            <a href="#services">
+                Farm Intelligence
+            </a>
+
+            <a href="#services">
+                Water Intelligence
+            </a>
+
+            <a href="#services">
+                Agricultural Logistics
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-links">
+
+            <h4>
+                Connect
+            </h4>
+
+            <a href="#consultation">
+                Consultation
+            </a>
+
+            <a href="mailto:calebsammy224@gmail.com">
+                Email Us
+            </a>
+
+            <!-- Replace these with your real social URLs -->
+
+            <a href="#" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="#" target="_blank">
+                Facebook
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 AgriMap Smart Solutions.
+            All rights reserved.
+        </p>
+
+        <p>
+            Agriculture • Data • Geospatial Intelligence
+        </p>
+
+    </div>
 
 </footer>
 
 
 
+<!-- =====================================================
+     LEAFLET
+===================================================== -->
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
 <script>
 
-const quotes = [
-"Turn Your Farm Into a Profitable Agricultural System Using GIS Mapping",
-"Transform Idle Land Into High-Yield Farms With Data-Driven Planning",
-"Plan Your Farm With Data  Not Guesswork",
-"From Dormant Land to Thriving Farms Using Geospatial Intelligence",
-"Design Productive Farms With Soil, Water, and Terrain Analysis"
-];
+/* =====================================================
+   HERO ROTATING MESSAGES
+===================================================== */
 
-let quoteIndex = 0;
+const heroMessages = [
 
-function changeQuote(){
+    {
+        title: "SMART AGRICULTURE.<br>BETTER DECISIONS.",
+        text: "We use geospatial and agricultural data to help farmers, landowners, investors and agribusinesses make smarter decisions about land, crops, water and markets."
+    },
 
-quoteIndex++;
+    {
+        title: "TURN LAND INTO<br>AGRICULTURAL OPPORTUNITY.",
+        text: "Understand land potential, suitability, accessibility and agricultural opportunities before making major decisions."
+    },
 
-if(quoteIndex >= quotes.length){
-quoteIndex = 0;
-}
+    {
+        title: "PLAN YOUR FARM<br>WITH DATA.",
+        text: "From crop suitability and water planning to farm layouts and logistics, we turn spatial data into practical agricultural decisions."
+    },
 
-document.getElementById("hero-quote").innerText = quotes[quoteIndex];
-
-}
-
-setInterval(changeQuote,4000);
-
-
-
-const testimonials = [
-
-{
-text:"AgriMap helped us map our farm and plan irrigation. Our crop yields improved.",
-author:"- John Mwangi, Machakos"
-},
-
-{
-text:"The soil analysis helped us choose the right crops. Very professional work.",
-author:"- Grace Njeri, Kiambu"
-},
-
-{
-text:"They helped us identify the best borehole location for our farm.",
-author:"- David Ole, Kajiado"
-},
-
-{
-text:"AgriMap helped us plan our potato farm and understand our soil better. Our harvest improved significantly.",
-author:"- Marion Chepng'eno,  Molo"
-}
+    {
+        title: "CONNECT LAND,<br>CROPS, WATER & MARKETS.",
+        text: "Agriculture works as a system. We analyze the connections between resources, production, infrastructure and markets."
+    }
 
 ];
 
-let testimonialIndex = 0;
+let heroIndex = 0;
 
-function changeTestimonial(){
+const heroTitle = document.getElementById("hero-title");
+const heroText = document.getElementById("hero-text");
 
-testimonialIndex++;
+setInterval(() => {
 
-if(testimonialIndex >= testimonials.length){
-testimonialIndex = 0;
+    heroIndex++;
+
+    if(heroIndex >= heroMessages.length){
+        heroIndex = 0;
+    }
+
+    heroTitle.style.opacity = "0";
+    heroText.style.opacity = "0";
+
+    setTimeout(() => {
+
+        heroTitle.innerHTML =
+            heroMessages[heroIndex].title;
+
+        heroText.textContent =
+            heroMessages[heroIndex].text;
+
+        heroTitle.style.opacity = "1";
+        heroText.style.opacity = "1";
+
+    }, 400);
+
+}, 5000);
+
+
+
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+const revealElements =
+    document.querySelectorAll(".reveal");
+
+const revealObserver =
+    new IntersectionObserver(
+
+        entries => {
+
+            entries.forEach(entry => {
+
+                if(entry.isIntersecting){
+
+                    entry.target.classList.add("visible");
+
+                    revealObserver.unobserve(entry.target);
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold:0.12
+        }
+
+    );
+
+
+revealElements.forEach(element => {
+
+    revealObserver.observe(element);
+
+});
+
+
+
+/* =====================================================
+   LEAFLET MAP
+===================================================== */
+
+const map =
+    L.map("map").setView(
+        [-1.286389,36.817223],
+        6
+    );
+
+
+L.tileLayer(
+    "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {
+        attribution:
+        '&copy; OpenStreetMap contributors'
+    }
+).addTo(map);
+
+
+L.marker([-1.286389,36.817223])
+    .addTo(map)
+    .bindPopup(
+        "<strong>AgriMap Smart Solutions</strong><br>Kenya"
+    )
+    .openPopup();
+
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+const form =
+    document.querySelector("form");
+
+form.addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    alert(
+        "Thank you for contacting AgriMap Smart Solutions. We will get back to you shortly."
+    );
+
+    form.reset();
+
+});
+
+/* =====================================================
+   SERVICE CATEGORY SLIDER
+===================================================== */
+
+const serviceTabs =
+    document.querySelectorAll(".service-tab");
+
+const serviceSlides =
+    document.querySelectorAll(".service-category-slide");
+
+const servicePrev =
+    document.getElementById("service-prev");
+
+const serviceNext =
+    document.getElementById("service-next");
+
+const progressDots =
+    document.querySelectorAll(".service-progress span");
+
+let serviceIndex = 0;
+
+
+function showServiceCategory(index){
+
+    if(index < 0){
+        index = serviceSlides.length - 1;
+    }
+
+    if(index >= serviceSlides.length){
+        index = 0;
+    }
+
+    serviceIndex = index;
+
+
+    serviceTabs.forEach((tab, i) => {
+
+        tab.classList.toggle(
+            "active",
+            i === serviceIndex
+        );
+
+    });
+
+
+    serviceSlides.forEach((slide, i) => {
+
+        slide.classList.toggle(
+            "active",
+            i === serviceIndex
+        );
+
+    });
+
+
+    progressDots.forEach((dot, i) => {
+
+        dot.classList.toggle(
+            "progress-active",
+            i === serviceIndex
+        );
+
+    });
+
 }
 
-document.getElementById("testimonial-text").innerText = testimonials[testimonialIndex].text;
-document.getElementById("testimonial-author").innerText = testimonials[testimonialIndex].author;
+
+serviceTabs.forEach((tab, index) => {
+
+    tab.addEventListener("click", function(){
+
+        showServiceCategory(index);
+
+    });
+
+});
+
+
+servicePrev.addEventListener("click", function(){
+
+    showServiceCategory(serviceIndex - 1);
+
+});
+
+
+serviceNext.addEventListener("click", function(){
+
+    showServiceCategory(serviceIndex + 1);
+
+});
+
+
+showServiceCategory(0);
+
+
+/* =====================================================
+   CAREER APPLICATION
+===================================================== */
+
+const applicationModal =
+    document.getElementById("applicationModal");
+
+const selectedPosition =
+    document.getElementById("selectedPosition");
+
+const positionInput =
+    document.getElementById("positionInput");
+
+
+function openApplication(position){
+
+    selectedPosition.textContent = position;
+
+    positionInput.value = position;
+
+    applicationModal.classList.add("active");
+
+    document.body.style.overflow = "hidden";
 
 }
 
-setInterval(changeTestimonial,5000);
+
+function closeApplication(){
+
+    applicationModal.classList.remove("active");
+
+    document.body.style.overflow = "";
+
+}
 
 
+/* Close when clicking outside */
 
-var map = L.map('map').setView([-1.286389,36.817223], 11);
+applicationModal.addEventListener(
+    "click",
+    function(event){
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-maxZoom:19,
-attribution:'© OpenStreetMap'
-}).addTo(map);
+        if(event.target === applicationModal){
 
-var marker = L.marker([-1.286389,36.817223]).addTo(map);
+            closeApplication();
 
-marker.bindPopup("AgriMap Solutions - Nairobi").openPopup();
+        }
+
+    }
+);
+
+
+/* Close with Escape */
+
+document.addEventListener(
+    "keydown",
+    function(event){
+
+        if(event.key === "Escape"){
+
+            closeApplication();
+
+        }
+
+    }
+);
+
 
 </script>
 
+
 </body>
+
 </html>
